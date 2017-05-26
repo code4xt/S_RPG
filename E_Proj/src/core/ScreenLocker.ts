@@ -1,4 +1,0 @@
-class ScreenLocker {
-	public constructor() {
-	}
-}
