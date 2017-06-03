@@ -129,8 +129,12 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
-        let stageW = this.stage.stageWidth;
+        // let panel = new SceneBegin();
+        // this.addChild(panel);
+        let chooseLevel = new SceneLevels();
+        this.addChild(chooseLevel);
 
+        let stageW = this.stage.stageWidth;
         let textfield = new egret.TextField();
         this.addChild(textfield);
         textfield.alpha = 0;
@@ -144,13 +148,6 @@ class Main extends eui.UILayer {
         //根据name关键字，异步获取一个json配置文件，name属性请参考resources/resource.json配置文件的内容。
         // Get asynchronously a json configuration file according to name keyword. As for the property of name please refer to the configuration file of resources/resource.json.
         RES.getResAsync("description_json", this.startAnimation, this);
-
-        let button = new eui.Button();
-        button.label = "Click!";
-        button.horizontalCenter = 0;
-        button.verticalCenter = 0;
-        this.addChild(button);
-        button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onButtonClick, this);
     }
     /**
      * 根据name关键字创建一个Bitmap对象。name属性请参考resources/resource.json配置文件的内容。
@@ -190,17 +187,5 @@ class Main extends eui.UILayer {
         };
 
         change();
-    }
-
-    /**
-     * 点击按钮
-     * Click the button
-     */
-    private onButtonClick(e: egret.TouchEvent) {
-        let panel = new eui.Panel();
-        panel.title = "Title";
-        panel.horizontalCenter = 0;
-        panel.verticalCenter = 0;
-        this.addChild(panel);
     }
 }

@@ -1,47 +1,50 @@
 {
-    "15c2ed9a404": {
-        "path": "common_UI\\GameExit.ts",
-        "class": "GameExit",
-        "parentPath": ""
-    },
-    "15c2eeb9185": {
-        "path": "common_UI\\GameHelp.ts",
-        "class": "GameHelp",
-        "parentPath": ""
-    },
-    "15c2ef2c969": {
-        "path": "common_UI\\BxLoading.ts",
-        "class": "BxLoading",
-        "parentPath": ""
-    },
-    "15c2fada698": {
-        "path": "common_UI\\Login.ts",
-        "class": "Login",
-        "parentPath": ""
-    },
-    "15c302bf517": {
-        "path": "common_UI\\Setting.ts",
-        "class": "Setting",
-        "parentPath": ""
-    },
-    "15c303e531f": {
-        "path": "common_UI\\component\\Tips.ts",
-        "class": "Tips",
-        "parentPath": ""
-    },
-    "15c3041e0fe": {
-        "path": "common_UI\\component\\MsgBox.ts",
-        "class": "MsgBox",
-        "parentPath": "resource/eui_skins/PanelSkin.exml"
-    },
-    "15c30504c15": {
-        "path": "common_UI\\component\\ProgressBar.ts",
-        "class": "ProgressBar",
-        "parentPath": ""
-    },
-    "15c32e77af3": {
-        "path": "common_UI\\SharePanel.ts",
-        "class": "SharePanel",
-        "parentPath": "resource/eui_skins/PanelSkin.exml"
-    }
+  "15c2ed9a404": {
+    "path": "common_UI\\GameExit.ts",
+    "class": "GameExit",
+    "parentPath": ""
+  },
+  "15c2eeb9185": {
+    "path": "common_UI\\GameHelp.ts",
+    "class": "GameHelp",
+    "parentPath": ""
+  },
+  "15c2ef2c969": {
+    "path": "common_UI\\BxLoading.ts",
+    "class": "BxLoading",
+    "parentPath": ""
+  },
+  "15c2fada698": {
+    "path": "common_UI\\Login.ts",
+    "class": "Login",
+    "parentPath": ""
+  },
+  "15c302bf517": {
+    "path": "common_UI\\Setting.ts",
+    "class": "Setting",
+    "parentPath": ""
+  },
+  "15c303e531f": {
+    "path": "common_UI\\component\\Tips.ts",
+    "class": "Tips",
+    "parentPath": ""
+  },
+  "15c3041e0fe": {
+    "path": "common_UI\\component\\MsgBox.ts",
+    "class": "MsgBox",
+    "parentPath": "resource/eui_skins/PanelSkin.exml"
+  },
+  "15c30504c15": {
+    "path": "common_UI\\component\\ProgressBar.ts",
+    "class": "ProgressBar",
+    "parentPath": ""
+  },
+  "15c32e77af3": {
+    "path": "common_UI\\SharePanel.ts",
+    "class": "SharePanel",
+    "parentPath": "resource/eui_skins/PanelSkin.exml"
+  },
+  "global": {
+    "globalAutoLayerMarkEnable": false
+  }
 }
