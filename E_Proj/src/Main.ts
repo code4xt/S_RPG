@@ -129,10 +129,10 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
-        // let panel = new SceneBegin();
-        // this.addChild(panel);
-        let chooseLevel = new SceneLevels();
-        this.addChild(chooseLevel);
+        let panel = new SceneBegin();
+        this.addChild(panel);
+        //let chooseLevel = new SceneLevels();
+        //this.addChild(chooseLevel);
 
         let stageW = this.stage.stageWidth;
         let textfield = new egret.TextField();

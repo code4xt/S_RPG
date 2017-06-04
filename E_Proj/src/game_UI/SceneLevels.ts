@@ -1,5 +1,16 @@
 class SceneLevels extends eui.Component 
 {
+    //单例
+	private static instance:SceneLevels;
+	/** 单例延迟实例化的标准实现 */
+    public static Instance(){
+		if(SceneLevels.instance == null)
+		{
+			SceneLevels.instance = new SceneLevels();
+		}
+		return SceneLevels.instance;
+	}
+
 	private btn_back: eui.Button;
 	private group_levels: eui.Group;
 
@@ -55,6 +66,8 @@ class SceneLevels extends eui.Component
 	}
 
 	private onclick_back() {
+        this.parent.addChild(SceneBegin.Instance());
+        this.parent.removeChild(this);
         
     }
 	private onclick_level(e: egret.TouchEvent) {
@@ -62,6 +75,5 @@ class SceneLevels extends eui.Component
 		console.log(icon.Level);
 		this.img_arrow.x = icon.x;
 		this.img_arrow.y = icon.y;
-
 	}    
 }
