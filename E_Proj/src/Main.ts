@@ -129,6 +129,7 @@ class Main extends eui.UILayer {
      * Create scene interface
      */
     protected startCreateScene(): void {
+        LevelDataManager.Instance();
         let panel = new SceneBegin();
         this.addChild(panel);
         //let chooseLevel = new SceneLevels();

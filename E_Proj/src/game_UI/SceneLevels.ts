@@ -14,8 +14,11 @@ class SceneLevels extends eui.Component
 	private btn_back: eui.Button;
 	private group_levels: eui.Group;
 
-	//正式游戏中的选定，进入流程需要进行体验
+	//正式游戏中的选定，进入流程需要标识一下当前选中的关数。
 	private img_arrow:eui.Image;
+
+    private sel_level: number = 0;
+    private LevelIcons:LevelIcon[] = [];
 
 	public constructor() {
 		super();
@@ -38,6 +41,7 @@ class SceneLevels extends eui.Component
             this.group_levels.addChildAt(img,0);
         }
         //以正弦曲线绘制关卡图标的路径
+        var milestone:number = LevelDataManager.Instance().Milestone;
         for(var i = 0; i<50;i++){
             var icon = new LevelIcon();
             icon.Level = i + 1;
@@ -47,6 +51,9 @@ class SceneLevels extends eui.Component
             icon.y = group.height - icon.y - spany;
             group.addChild(icon);
             icon.addEventListener(egret.TouchEvent.TOUCH_TAP,this.onclick_level,this);
+            //根据进度设置关卡显示
+            icon.enabled = i < milestone;
+            this.LevelIcons.push(icon);
         }
         //开启位图缓存模式
         group.cacheAsBitmap = true;
@@ -72,8 +79,29 @@ class SceneLevels extends eui.Component
     }
 	private onclick_level(e: egret.TouchEvent) {
 		var icon = <LevelIcon>e.currentTarget;
-		console.log(icon.Level);
-		this.img_arrow.x = icon.x;
-		this.img_arrow.y = icon.y;
-	}    
+        if(this.sel_level != icon.Level){
+		    this.img_arrow.x = icon.x;
+		    this.img_arrow.y = icon.y;
+            this.sel_level = icon.Level;
+        }else{
+            //进入并开始游戏
+            this.parent.addChild(SceneGame.Instance());
+            SceneGame.Instance().InitLevel(icon.Level);
+            this.parent.removeChild(this);
+        }
+		//console.log(icon.Level);
+	}
+
+    public OpenLevel(level:number){
+        var icon = this.LevelIcons[level - 1];
+        icon.enabled = true;
+        if(level > LevelDataManager.Instance().Milestone)
+        {
+            LevelDataManager.Instance().Milestone = level;
+            //同时
+            this.img_arrow.x = icon.x;
+		    this.img_arrow.y = icon.y;
+            this.sel_level = icon.Level;
+        }
+    }
 }

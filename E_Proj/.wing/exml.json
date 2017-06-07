@@ -45,6 +45,13 @@
     "parentPath": "resource/eui_skins/PanelSkin.exml"
   },
   "global": {
-    "globalAutoLayerMarkEnable": false
+    "globalAutoLayerMarkEnable": true,
+    "globalRulerEnable": true,
+    "globalAdsorbEnable": false
+  },
+  "15c76eabe1c": {
+    "path": "game_UI\\SceneGameSkin.ts",
+    "class": "SceneGameSkin",
+    "parentPath": ""
   }
 }
