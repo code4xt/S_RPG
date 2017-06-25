@@ -1,7 +1,7 @@
 {
 	"groups": [
 		{
-			"keys": "description_json,BackBtn_png,YesBtn1_jpg,YesBtn_jpg,WordFrame_png,StartBtn1_png,StartBtn_png,ResultBtn1_png,ResultBtn_png,Result_png,PageUpBtn_png,PageDownBtn_png,MoneyPic_png,MoneyBG_png,gs_select_dis_png,gs_select_1_png,GameBG3_jpg,GameBG2_jpg,GameBG1_jpg,Dialog_png,btn_sound_png,btn_sound_down_png,btn_music_png,btn_music_down_png,btn_disable_png,BackBtn1_png,GameBG22_jpg,GameBG32_jpg,MoneyPic2_png,MoneyBG2_png,PageDownBtn2_png,PageUpBtn2_png,Result2_png,ResultBtn2_png,ResultBtn12_png,StartBtn2_png,StartBtn12_png,WordFrame2_png,YesBtn2_jpg,YesBtn12_jpg,btn_disable2_png,btn_music2_png,btn_music_down2_png,btn_sound2_png,btn_sound_down2_png,gs_select_12_png,gs_select_dis2_png,Music2_mp3,buttonclick2_mp3,right2_mp3,type_word2_mp3,wrong2_mp3",
+			"keys": "description_json,BackBtn_png,YesBtn1_jpg,YesBtn_jpg,WordFrame_png,StartBtn1_png,StartBtn_png,ResultBtn1_png,ResultBtn_png,Result_png,PageUpBtn_png,PageDownBtn_png,MoneyPic_png,MoneyBG_png,gs_select_dis_png,gs_select_1_png,GameBG3_jpg,GameBG2_jpg,GameBG1_jpg,Dialog_png,btn_sound_png,btn_sound_down_png,btn_music_png,btn_music_down_png,btn_disable_png,BackBtn1_png,GameBG22_jpg,GameBG32_jpg,MoneyPic2_png,MoneyBG2_png,PageDownBtn2_png,PageUpBtn2_png,Result2_png,ResultBtn2_png,ResultBtn12_png,StartBtn2_png,StartBtn12_png,WordFrame2_png,YesBtn2_jpg,YesBtn12_jpg,btn_disable2_png,btn_music2_png,btn_music_down2_png,btn_sound2_png,btn_sound_down2_png,gs_select_12_png,gs_select_dis2_png,Music2_mp3,buttonclick2_mp3,right2_mp3,type_word2_mp3,wrong2_mp3,questions_json",
 			"name": "preload"
 		},
 		{
@@ -544,6 +544,11 @@
 			"name": "wrong2_mp3",
 			"type": "sound",
 			"url": "assets/sound/wrong.mp3"
+		},
+		{
+			"name": "questions_json",
+			"type": "json",
+			"url": "config/questions.json"
 		}
 	]
 }

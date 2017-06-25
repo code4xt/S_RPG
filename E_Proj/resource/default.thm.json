@@ -2,11 +2,24 @@
   "skins": {
     "SceneBeginSkin": "resource/game_UI/SceneBeginSkin.exml",
     "LevelIconSkin": "resource/game_UI/LevelIconSkin.exml",
-    "SceneLevelSkin": "resource/game_UI/.exml"
+    "SceneLevelSkin": "resource/game_UI/SceneLevelSkin.exml",
+    "SceneGameSkin": "resource/game_UI/SceneGameSkin.exml"
   },
+  "autoGenerateExmlsList": true,
   "exmls": [
+    "resource/bx_common/BxLoading.exml",
+    "resource/bx_common/GameExit.exml",
+    "resource/bx_common/GameHelp.exml",
+    "resource/bx_common/Login.exml",
+    "resource/bx_common/MsgBox.exml",
+    "resource/bx_common/ProgressBar.exml",
+    "resource/bx_common/Setting.exml",
+    "resource/bx_common/SharePanel.exml",
+    "resource/bx_common/Tips.exml",
     "resource/game_UI/LevelIconSkin.exml",
     "resource/game_UI/SceneBeginSkin.exml",
+    "resource/game_UI/WordSkin.exml",
+    "resource/game_UI/SceneGameSkin.exml",
     "resource/game_UI/SceneLevelSkin.exml"
   ]
 }
